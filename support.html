@@ -5,28 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Support &#8211; Nodo</title>
   <style>
-    :root {
-      --bg: #ffffff;
-      --surface: #f5f5f7;
-      --text: #1d1d1f;
-      --secondary: #6e6e73;
-      --accent: #007aff;
-      --border: #d2d2d7;
-      --max-width: 680px;
+    /* Nodo's brand (First & Last brand book; brand review N10, 2026-11-02): Midnight words on white, Ice panels, links in
+       Midnight and underlined (Blue text on white is not one of the book's pairs). Light only: the book has no dark panel. */
+    @font-face {
+      font-family: "First Sans";
+      src: url("FirstSans-VF.woff2") format("woff2");
+      font-weight: 300 800;
+      font-display: swap;
     }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #000000;
-        --surface: #1c1c1e;
-        --text: #f5f5f7;
-        --secondary: #98989d;
-        --border: #38383a;
-        --accent: #0a84ff;
-      }
+    :root {
+      color-scheme: light;
+      --bg: #ffffff;
+      --surface: #e5f0ff;
+      --text: #061a40;
+      --secondary: #4c5a75;
+      --accent: #061a40;
+      --border: #dadde2;
+      --max-width: 680px;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      font-family: "First Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -38,16 +37,14 @@
       display: inline-block;
       font-size: 13px;
       font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
       color: var(--accent);
       margin-bottom: 12px;
     }
     h1 {
-      font-size: clamp(28px, 5vw, 40px);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.15;
+      font-size: clamp(32px, 6vw, 48px);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.0;
       margin-bottom: 16px;
     }
     .subtitle {
@@ -56,9 +53,9 @@
     }
     .faq { margin-top: 48px; }
     .faq h2 {
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: -0.01em;
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.025em;
       margin-bottom: 24px;
       padding-bottom: 12px;
       border-bottom: 1px solid var(--border);
@@ -105,8 +102,7 @@
       text-decoration: none;
     }
     .contact-box a.btn:hover { opacity: 0.88; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
     footer {
       margin-top: 72px;
       padding-top: 24px;
@@ -143,12 +139,12 @@
 
       <div class="faq-item">
         <h3>How do I restore my purchase?</h3>
-        <p>Open Nodo&#8217;s Settings, tap the <strong>Unlimited check-ins</strong> banner, then <strong>Restore Purchases</strong> under the Unlock button. Your App Store account is used to verify the purchase &#8212; make sure you&#8217;re signed in with the same Apple Account you used to buy it.</p>
+        <p>Open Nodo&#8217;s Settings, tap the <strong>Unlimited check-ins</strong> banner, then <strong>Restore purchases</strong> under the Unlock button. Your App Store account is used to verify the purchase &#8212; make sure you&#8217;re signed in with the same Apple Account you used to buy it.</p>
       </div>
 
       <div class="faq-item">
         <h3>I was charged but the purchase isn&#8217;t unlocked.</h3>
-        <p>Try <strong>Restore Purchases</strong> first. If that doesn&#8217;t work, please contact us with your Apple Account email and the approximate date of purchase and we&#8217;ll help resolve it.</p>
+        <p>Try <strong>Restore purchases</strong> first. If that doesn&#8217;t work, please contact us with your Apple Account email and the approximate date of purchase and we&#8217;ll help resolve it.</p>
       </div>
 
       <div class="faq-item">
